@@ -17,7 +17,10 @@ class Vehicle
     @@vehicles.each() do |vehicle|
       if vehicle.id().eql?(identification.to_i())
           found_vehicle = vehicle
-
+      end
+    end
+    found_vehicle
+  end
   define_method(:make)  do
     @make
   end
